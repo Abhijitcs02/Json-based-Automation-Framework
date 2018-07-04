@@ -1,0 +1,13 @@
+{
+  "testdata3" : "val1",
+  "testdataNEW" : "tytwer454545458989",
+  "outDataFileName" : "testCase2.json",
+  "testdata1" : "DAytytyttyt11111",
+  "inDataFileName" : "testCase4.json",
+  "description" : "sample test case",
+  "steps" : [ {
+    "A1_LoginPage" : [ "method1", "login" ],
+    "A2_HomePage" : [ "method2" ],
+    "A3_LoginPage" : [ "method1", "login" ]
+  } ]
+}

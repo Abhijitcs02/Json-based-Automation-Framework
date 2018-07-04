@@ -1,0 +1,17 @@
+<suite name="ProductTesting">
+	<listeners>
+		<!--<listener class-name="org.testng.reporters.EmailableReporter2" />  -->
+		<listener class-name="com.automation.core.TestListner" />
+	</listeners>
+	<test name="regression">
+		<classes>
+			<class name="com.automation.tests.poc.SampleTest1" >
+			<!--<methods>
+				<include name="test1" />
+				<include name="test2" />
+				<exclude name="test3" />
+			</methods> -->
+		</class>
+		</classes>
+	</test>
+</suite>

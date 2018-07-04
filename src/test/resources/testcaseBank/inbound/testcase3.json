@@ -1,0 +1,12 @@
+{
+  "td1" : "val1",
+  "testdataNEW" : "tytwer454545458989",
+  "outDataFileName" : "outbound:testCase3.json",
+  "testdata1" : "DAytytyttyt11111",
+  "inDataFileName" : "testCase3.json",
+  "description" : "sample test case",
+  "steps" : [ {
+    "A1_LoginPage" : [ "login" ]
+  } ],
+  "testdataNEWDATASAME" : "tytwer454545458989333333333333333344DONE"
+}

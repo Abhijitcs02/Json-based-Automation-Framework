@@ -1,0 +1,11 @@
+{
+  "testName": "testCase1",
+  "description": "sample test case",
+  "inDataFileName":"in_testCase1.json",
+  "outDataFileName":"out_testCase1.json",
+  "steps": [{
+          "A1_LoginPage" : ["method1","login"],
+          "A2_HomePage" : ["method2"],
+          "A3_LoginPage" : ["method1","login"]
+        }]
+}

@@ -1,0 +1,10 @@
+{
+  "user" : "abhijit.mukherjee@nike.com",
+  "password" : "Nike1234",
+  "outDataFileName" : "outbound:testCase1.json",
+  "inDataFileName" : "NtsAppLogin.json",
+  "description" : "TEST CASE DEMO",
+  "steps" : [ {
+    "A1_LoginPage" : [ "NTSapplicationLogin" ]
+  } ]
+}

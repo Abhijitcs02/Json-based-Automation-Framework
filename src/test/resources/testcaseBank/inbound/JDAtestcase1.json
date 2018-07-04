@@ -1,0 +1,9 @@
+{
+  "description": "sample test case",
+  "inDataFileName":"JDAtestCase1.json",
+  "outDataFileName":"testCase2.json",
+  "steps": [{
+          "A1_LoginPage" : ["applicationLogin"],
+          "A2_HomePage" : ["inboundShipmentClick","addInboundOrder","addInboundOrderLine","addInboundShipment","mappingInboundShipment","navigateToAppoinmentDoor","createAppoinment","mappingAppoinment"]
+        }]
+}

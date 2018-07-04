@@ -1,0 +1,13 @@
+{
+  "td1" : "great",
+  "testdata2" : "cheese",
+  "testdata3" : "cheese",
+  "testdataNEW" : "tytwer454545458989",
+  "outDataFileName" : "testCase3.json",
+  "testdata1" : "DAytytyttyt11111",
+  "inDataFileName" : "testCase2.json",
+  "description" : "sample test case",
+  "steps" : [ {
+    "A2_HomePage" : [ "method2" ]
+  } ]
+}

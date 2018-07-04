@@ -1,0 +1,16 @@
+{
+  "testdata3" : "val1",
+  "outDataFileName" : "testCase2.json",
+  "inDataFileName" : "in_testCase1.json",
+  "description" : "sample test case",
+  "steps" : [ {
+    "inboundFlow" : {
+      "component" : "inbound",
+      "actions" : [ {
+        "A1_LoginPage" : [ "method1", "login" ],
+        "A2_HomePage" : [ "method2" ],
+        "A3_LoginPage" : [ "method1", "login" ]
+      } ]
+    }
+  } ]
+}
