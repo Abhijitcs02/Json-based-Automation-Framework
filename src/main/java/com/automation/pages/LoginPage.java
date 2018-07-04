@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -98,6 +99,24 @@ public class LoginPage {
         BaseTest.logger.log(LogStatus.PASS, BaseTest.logger.addScreenCapture(HtmlReportManager.CaptureScreen(driver)));
         driver.findElement(By.cssSelector("#nav-bar>div.top-nav.hidden-xs.hidden-sm>span")).click();
         BaseTest.logger.log(LogStatus.PASS, BaseTest.logger.addScreenCapture(HtmlReportManager.CaptureScreen(driver)));
+        driver.findElement(By.xpath("//input[@type='email']")).clear();
+        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("abhijit.mukherjee@nike.com");
+        BaseTest.logger.log(LogStatus.PASS, BaseTest.logger.addScreenCapture(HtmlReportManager.CaptureScreen(driver)));
+        driver.findElement(By.xpath("//input[@type='password']")).clear();
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Nike1234");
+        BaseTest.logger.log(LogStatus.PASS, BaseTest.logger.addScreenCapture(HtmlReportManager.CaptureScreen(driver)));
+        driver.findElement(By.xpath("//input[@value='LOG IN']")).click();
+        //*[@id="nav-bar"]/div[1]/div[2]
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(By.xpath("//*[@id='nav-bar']/div[1]/div[2]")));
+        actions.moveToElement(driver.findElement(By.xpath("//div[contains(text(),'abhijit.mukherjee@nike.com')]")));
+        String t=driver.findElement(By.xpath("//div[contains(text(),'abhijit.mukherjee@nike.com')]")).getText();
+        if(t.equalsIgnoreCase("abhijit.mukherjee@nike.com")){
+            BaseTest.logger.log(LogStatus.PASS, BaseTest.logger.addScreenCapture(HtmlReportManager.CaptureScreen(driver)));
+        }
+        else {
+            BaseTest.logger.log(LogStatus.FAIL, BaseTest.logger.addScreenCapture(HtmlReportManager.CaptureScreen(driver)));
+        }
     }
 
 
